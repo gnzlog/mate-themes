@@ -1,0 +1,125 @@
+/************
+ * Nautilus *
+ ************/
+
+/*
+.nautilus-desktop.nautilus-canvas-item {
+	color: @theme_base_color;
+	text-shadow: 1 1 alpha (@theme_fg_color, 0.8);
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:selected {
+	text-shadow: none;
+}
+*/
+
+.nautilus-desktop .entry {
+	background-image: none;
+	border-image: none;
+}
+
+/*********
+ * gedit *
+ *********/
+
+GeditMultiNotebook .notebook {
+	border-width: 0px 0px 1px 1px;
+}
+
+GeditPanel.horizontal .notebook {
+	border-width: 0px 1px 1px 1px;
+}
+
+GeditPanel.vertical .notebook {
+	border-width: 0px 1px 1px 1px;
+}
+
+GeditViewFrame .gedit-search-slider {
+	padding: 4px;
+	border-image: url("img/border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+}
+
+GeditViewFrame .gedit-search-slider .not-found {
+	background-color: @error_bg_color;
+	color: @error_fg_color;
+}
+
+GeditViewFrame .gedit-search-slider .not-found:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+
+.gedit-search-entry-occurrences-tag {
+	color: @theme_text_color;
+	background-color: @theme_bg_color;
+	margin: 2px 0px 2px 2px;
+	padding: 2px;
+}
+
+/*******************
+ * gnome-documents *
+ *******************/
+
+.documents-scrolledwin.frame {
+	border-width: 1px 0 0 0;
+	border-radius: 0;
+}
+
+.documents-main-view.view {
+	background-color: @theme_base_color;
+}
+
+GtkIconView.documents-main-view.check {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: @theme_base_color;
+}
+
+.documents-selection-mode.toolbar {
+	border-width: 0;
+}
+
+.documents-selection-mode.toolbar .dim-label {
+	color: @theme_fg_color;
+}
+
+.documents-icon-bg {
+	background-color: @switch_trough_active_gradient_a;
+	border-radius: 3px;
+	color: @theme_base_color;
+}
+
+.documents-collection-icon {
+	background-color: @theme_bg_color;
+	border-radius: 3px;
+}
+
+/*********
+ * Unity *
+ *********/
+
+UnityPanelWidget,
+.unity-panel {
+	background-image: none;
+	background-color: @theme_bg_color;
+	color: @theme_fg_color;
+	border-width: 0;
+}
+
+.unity-panel.menubar.menuitem:hover {
+	background-color: @menu_bg_color;
+	border-style: solid;
+	border-width: 1px 1px 0px;
+	border-color: @menubar_menuitem_hover_border_color;
+	border-radius: 3px 3px 0 0;
+	background-image: -gtk-gradient (linear,
+	                  left top,
+	                  left bottom,
+	                  from (@menubar_menuitem_hover_gradient_a),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+	                  to (@menubar_menuitem_hover_gradient_d));
+}
+
