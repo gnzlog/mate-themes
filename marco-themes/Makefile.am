@@ -1,10 +1,4 @@
-THEMES = \
-	Atantla \
-	AlaDelta \
-	Quid \
-	Reverse \
-	Fog \
-	BlackMenta
+THEMES = BlackMenta
 
 THEME_DIR=$(datadir)/themes
 THEME_SUBDIR=metacity-1

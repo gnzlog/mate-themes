@@ -1,5 +1,4 @@
 SUBDIRS = \
-	gtk-themes \
 	marco-themes \
 	icon-themes \
 	desktop-themes \
